@@ -1,0 +1,79 @@
+ cd Desktop (Заходимо на робочий стіл);
+ mkdir project (Створюємо директорію "project");
+ cd project (Переходимо в директорію);
+ touch task.txt (Створюємо файл);
+ nano task.txt (Через текстовий редактор nano записав у файл текст :
+
+"Hello world! 
+linux
+terminal
+project
+My first program
+project1
+project2
+project3"
+
+cat task.txt (Вивело  текст ; З файлy : task.txt);
+grep first task.txt (Виділило слово "first" з тексту);
+cp task.txt newtask.txt (Скопіював файл task.txt і назвав другий файл newtask.txt);
+mv newtask.txt project.txt (Перейменував файл newtask.txt  на project.txt);
+ls (Переглянув які файли є в директорії. Є task.txt project.txt );
+rm project.txt (Видалив файл project.txt );
+ls (Переглянув які файли є в директорії. Є task.txt);
+cd 
+cd Desktop 
+tar -cf project.tar project/ (заархівувало директорію "project");
+tar -tf project.tar (вивело в консоль всі файли та директорії в архіві);
+tar -xvf project.tar (розархівувало все);
+rm -rf project (Видалив директорію і файли в ній);
+rm -rf project.tar (Видалив заархівовану директорію);
+
+For example:
+sudo apt-get install name program (Завантажив програму);
+name program --version (Подивився версію програми);
+sudo apt-get remove name program (Видалив програму);
+sudo apt-get update name program(Оновлюємо файли);
+sudo apt-get upgrade name progmam (Переконуємось , що система оновлена);
+
+man -f ls - У цьому прикладі команда ' ls ' повертається із номером розділу (ls (1)               - list directory contents);
+
+
+
+mkdir - створити папку;
+
+cd - змінює робочу директорію;
+
+touch - створити файл;
+
+rm - видалити файл :
+-r видаляє пусту папку;
+-rf видаляє заповнену папку;
+
+ls - Виводить список файлів в директорію;
+-a Виводить всі файли , включаючи приховані;
+
+cp - kопіювати файли;
+
+grep - Можна шукати конкретні слова в файлі;
+
+cat - Зчитує  дані з файлів і їх виводить;
+
+mv (old name) (new name) - перейменувати;
+
+man - призначена для форматування і виведення довідкових сторінок;
+
+sudo apt-get install (..) - установка програми ;
+
+sudo apt-get remove (..) - видалення програми;
+
+tar -cf (..).tar (..)/  - заархівувало директорію;
+
+tar -tf (..).tar -  вивело в консоль всі файли та директорії в архіві;
+
+tar -xvf (..).tar - розархівувало все;
+
+nano - консольний текстовий редактор;
+
+
+
+ 
