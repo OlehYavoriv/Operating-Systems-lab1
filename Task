@@ -28,6 +28,15 @@ tar -xvf project.tar (розархівувало все);
 rm -rf project (Видалив директорію і файли в ній);
 rm -rf project.tar (Видалив заархівовану директорію);
 
+ln -s file.sh files.sh (Команда ln в Linux створює зв'язки між вихідними файлами та каталогами.
+-s - команда для символічних посилань.);
+ls -l (Створені посилання можна перевірити за допомогою списку каталогів, використовуючи детальну команду списку);
+Отримаємо :lrwxrwxrwx 1 oleh oleh      7 Nov  4 11:55  files.sh -> file.sh    
+ln -s /files.sh/Home ( щоб зв’язати /files.sh/ з папкою /Home);
+rm files.sh (видалив);
+man ln (Отримання довідки щодо команди ln);
+
+
 For example:
 sudo apt-get install name program (Завантажив програму);
 name program --version (Подивився версію програми);
